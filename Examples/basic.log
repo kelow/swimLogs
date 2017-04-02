@@ -1,0 +1,99 @@
+Program started at 2017.04.01 12:00:00 for user user11
+Startup sequence
+ReadConfig
+2017.04.01 12:00:01 Fetch terrain data
+2017.04.01 12:00:01 Fetch time data
+2017.04.01 12:00:01 Fetch DB data start
+Fetching users from DB
+Fetching customers from DB
+Fetching vehicles from DB
+2017.04.01 12:00:03 Fetch DB data end
+SendEvent(APP_STARTED)
+Startup sequence finished
+SendEvent(PARAM_OPEN)
+2017.04.01 12:00:11 Select v.reg, v.speed, v.owner from vehicles v 
+2017.04.01 12:00:11 Select v.reg, v.speed, v.owner from vehicles v 
+SendEvent(PARAM_CLOSE)
+SendEvent(CALC_OPEN)
+RideKey = 20170402WAWGDA01
+Calculation started 12:01:13 01 Apr 2017
+Initial result: 215l, 1:45, 314km
+Optimizing route...
+Optimizing route...1%
+Optimizing route...15%
+Optimizing route...45%
+Optimizing route...48%
+Optimizing route...85%
+Optimizing route...100% done
+Final result: 197l, 1:42, 302km
+Calculation ended
+Calculation started 12:04:02 01 Apr 2017
+Initial result: 215l, 1:45, 314km
+Optimizing route...
+Optimizing route...1%
+Optimizing route...15%
+Optimizing route...45%
+Optimizing route...48%
+Optimizing route...85%
+Optimizing route...100% done
+Final result: 186l, 1:37, 296km
+Calculation ended 
+SendEvent(CALC_CLOSE)
+SendEvent(PRINT_OPEN)
+2017.04.01 12:08:05 Select * from legal
+2017.04.01 12:08:05 Start legality check
+2017.04.01 12:08:48 Legality result: pass
+Start printer
+PRINTER: adding route
+PRINTER: adding manifest
+PRINTER: adding weather
+PRINTER: process
+PRINTER: DONE
+2017.04.01 12:09:15 Received files
+SendForDriver: Error: 0
+Remove files: Error: 0
+SendEvent(PARAM_OPEN)
+2017.04.01 12:10:00 Select v.reg, v.speed, v.owner from vehicles v 
+2017.04.01 12:10:00 Select v.reg, v.speed, v.owner from vehicles v 
+SendEvent(PARAM_CLOSE)
+SendEvent(CALC_OPEN)
+RideKey = 20170402WAWGDA02
+Calculation started 12:10:18 01 Apr 2017
+Initial result: 188l, 1:48, 314km
+Optimizing route...
+Optimizing route...1%
+Optimizing route...15%
+Optimizing route...45%
+Optimizing route...48%
+Optimizing route...85%
+Optimizing route...100% done
+Final result: 187l, 1:43, 302km
+Calculation ended
+Calculation started 12:13:37 01 Apr 2017
+Initial result: 188l, 1:45, 314km
+Optimizing route...
+Optimizing route...1%
+Optimizing route...15%
+Optimizing route...45%
+Optimizing route...48%
+Optimizing route...85%
+Optimizing route...100% done
+Final result: 186l, 1:38, 296km
+Calculation ended 
+SendEvent(CALC_CLOSE)
+SendEvent(PRINT_OPEN)
+2017.04.01 12:16:25 Select * from legal
+2017.04.01 12:16:26 Start legality check
+2017.04.01 12:16:33 Legality result: pass
+Start printer
+PRINTER: adding route
+PRINTER: adding manifest
+PRINTER: adding weather
+PRINTER: process
+PRINTER: DONE
+2017.04.01 12:16:38 Received files
+SendForDriver: Error: 0
+Remove files: Error: 0
+Quit
+
+

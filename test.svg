@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg height="400" onload="init(evt)" width="3000" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<style type="text/css">.func_g:hover { stroke:black; stroke-width:0.5; }</style>
+	<script type="text/ecmascript"><![CDATA[
+			var details;
+			function init(evt) { details = document.getElementById("details").firstChild; }
+			function s(info) { details.nodeValue = info; }
+			function c() { details.nodeValue = ' '; }
+		]]></script>
+	<text font-family="Verdana" font-size="12" id="details" x="10" y="225"> </text>
+	<g class="func_g" onmouseout="c()" onmouseover="s('basic:  at 2017.04.01 12:00:00 for user user11')">
+		<title >basic:  at 2017.04.01 12:00:00 for user user11</title>
+		<rect fill="rgb(218,28,13)" height="14" opacity="0.8" rx="3" ry="3" width="2996.85438451498" x="0.5" y="0" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1.5" y="10">basic:  at 2017.04.01 12:00:00 for user user11</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('basic:  at 2017.04.01 12:00:00 for user user11')">
+		<title >basic:  at 2017.04.01 12:00:00 for user user11</title>
+		<rect fill="rgb(241,202,38)" height="14" opacity="0.8" rx="3" ry="3" width="2996.85438451498" x="0.5" y="75" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1.5" y="85">basic:  at 2017.04.01 12:00:00 for user user11</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('rideOpened: 20170402WAWGDA01')">
+		<title >rideOpened: 20170402WAWGDA01</title>
+		<rect fill="rgb(235,190,40)" height="14" opacity="0.8" rx="3" ry="3" width="1669.14733245524" x="173.222071252116" y="15" />
+		<text fill="rgb(0,0,0)" font-size="12" x="174.222071252116" y="25">rideOpened: 20170402WAWGDA01</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('rideOpened: 20170402WAWGDA01')">
+		<title >rideOpened: 20170402WAWGDA01</title>
+		<rect fill="rgb(235,188,14)" height="14" opacity="0.8" rx="3" ry="3" width="1669.14733245524" x="173.222071252116" y="90" />
+		<text fill="rgb(0,0,0)" font-size="12" x="174.222071252116" y="100">rideOpened: 20170402WAWGDA01</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('rideOpened: 20170402WAWGDA02')">
+		<title >rideOpened: 20170402WAWGDA02</title>
+		<rect fill="rgb(218,8,18)" height="14" opacity="0.8" rx="3" ry="3" width="1153.98498080763" x="1843.36940370736" y="15" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1844.36940370736" y="25">rideOpened: 20170402WAWGDA02</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('rideOpened: 20170402WAWGDA02')">
+		<title >rideOpened: 20170402WAWGDA02</title>
+		<rect fill="rgb(224,218,45)" height="14" opacity="0.8" rx="3" ry="3" width="1153.98498080763" x="1843.36940370736" y="90" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1844.36940370736" y="100">rideOpened: 20170402WAWGDA02</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('optimization')">
+		<title >optimization</title>
+		<rect fill="rgb(0,180,0)" height="14" opacity="0.8" rx="3" ry="3" width="560.49114785164" x="727.434630313252" y="30" />
+		<text fill="rgb(0,0,0)" font-size="12" x="728.434630313252" y="40">optimization</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('optimization')">
+		<title >optimization</title>
+		<rect fill="rgb(0,180,0)" height="14" opacity="0.8" rx="3" ry="3" width="560.49114785164" x="727.434630313252" y="105" />
+		<text fill="rgb(0,0,0)" font-size="12" x="728.434630313252" y="115">optimization</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('optimization')">
+		<title >optimization</title>
+		<rect fill="rgb(0,180,0)" height="14" opacity="0.8" rx="3" ry="3" width="542.42596356748" x="1856.88678319665" y="30" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1857.88678319665" y="40">optimization</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('optimization')">
+		<title >optimization</title>
+		<rect fill="rgb(0,180,0)" height="14" opacity="0.8" rx="3" ry="3" width="542.42596356748" x="1856.88678319665" y="105" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1857.88678319665" y="115">optimization</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('optimization')">
+		<title >optimization</title>
+		<rect fill="rgb(0,180,0)" height="14" opacity="0.8" rx="3" ry="3" width="460.502451576247" x="219.781933937469" y="30" />
+		<text fill="rgb(0,0,0)" font-size="12" x="220.781933937469" y="40">optimization</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('optimization')">
+		<title >optimization</title>
+		<rect fill="rgb(0,180,0)" height="14" opacity="0.8" rx="3" ry="3" width="460.502451576247" x="219.781933937469" y="105" />
+		<text fill="rgb(0,0,0)" font-size="12" x="220.781933937469" y="115">optimization</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('optimization')">
+		<title >optimization</title>
+		<rect fill="rgb(0,180,0)" height="14" opacity="0.8" rx="3" ry="3" width="387.191410754293" x="2454.65534283441" y="30" />
+		<text fill="rgb(0,0,0)" font-size="12" x="2455.65534283441" y="40">optimization</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('optimization')">
+		<title >optimization</title>
+		<rect fill="rgb(0,180,0)" height="14" opacity="0.8" rx="3" ry="3" width="387.191410754293" x="2454.65534283441" y="105" />
+		<text fill="rgb(0,0,0)" font-size="12" x="2455.65534283441" y="115">optimization</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('optimizeRoute')">
+		<title >optimizeRoute</title>
+		<rect fill="rgb(239,142,38)" height="14" opacity="0.8" rx="3" ry="3" width="335.894688424513" x="839.732860026815" y="45" />
+		<text fill="rgb(0,0,0)" font-size="12" x="840.732860026815" y="55">optimizeRoute</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('optimizeRoute')">
+		<title >optimizeRoute</title>
+		<rect fill="rgb(252,219,26)" height="14" opacity="0.8" rx="3" ry="3" width="335.894688424513" x="839.732860026815" y="120" />
+		<text fill="rgb(0,0,0)" font-size="12" x="840.732860026815" y="130">optimizeRoute</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('optimizeRoute')">
+		<title >optimizeRoute</title>
+		<rect fill="rgb(234,227,43)" height="14" opacity="0.8" rx="3" ry="3" width="325.055577854017" x="1965.57197605338" y="45" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1966.57197605338" y="55">optimizeRoute</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('optimizeRoute')">
+		<title >optimizeRoute</title>
+		<rect fill="rgb(214,119,44)" height="14" opacity="0.8" rx="3" ry="3" width="325.055577854017" x="1965.57197605338" y="120" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1966.57197605338" y="130">optimizeRoute</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('optimizeRoute')">
+		<title >optimizeRoute</title>
+		<rect fill="rgb(208,59,10)" height="14" opacity="0.8" rx="3" ry="3" width="275.901470945748" x="312.082424252718" y="45" />
+		<text fill="rgb(0,0,0)" font-size="12" x="313.082424252718" y="55">optimizeRoute</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('optimizeRoute')">
+		<title >optimizeRoute</title>
+		<rect fill="rgb(213,158,0)" height="14" opacity="0.8" rx="3" ry="3" width="275.901470945748" x="312.082424252718" y="120" />
+		<text fill="rgb(0,0,0)" font-size="12" x="313.082424252718" y="130">optimizeRoute</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('optimizeRoute')">
+		<title >optimizeRoute</title>
+		<rect fill="rgb(213,72,19)" height="14" opacity="0.8" rx="3" ry="3" width="231.914847025517" x="2532.2936246988" y="45" />
+		<text fill="rgb(0,0,0)" font-size="12" x="2533.2936246988" y="55">optimizeRoute</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('optimizeRoute')">
+		<title >optimizeRoute</title>
+		<rect fill="rgb(220,56,17)" height="14" opacity="0.8" rx="3" ry="3" width="231.914847025517" x="2532.2936246988" y="120" />
+		<text fill="rgb(0,0,0)" font-size="12" x="2533.2936246988" y="130">optimizeRoute</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('printer')">
+		<title >printer</title>
+		<rect fill="rgb(222,136,0)" height="14" opacity="0.8" rx="3" ry="3" width="56.9316259734533" x="1598.12551889189" y="30" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1599.12551889189" y="40">printer</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('printer')">
+		<title >printer</title>
+		<rect fill="rgb(213,145,23)" height="14" opacity="0.8" rx="3" ry="3" width="56.9316259734533" x="1598.12551889189" y="105" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1599.12551889189" y="115">printer</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('startup')">
+		<title >startup</title>
+		<rect fill="rgb(241,116,30)" height="14" opacity="0.8" rx="3" ry="3" width="19.0257476302752" x="1.50128713085197" y="15" />
+		<text fill="rgb(0,0,0)" font-size="12" x="2.50128713085197" y="25">sta</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('startup')">
+		<title >startup</title>
+		<rect fill="rgb(239,141,46)" height="14" opacity="0.8" rx="3" ry="3" width="19.0257476302752" x="1.50128713085197" y="90" />
+		<text fill="rgb(0,0,0)" font-size="12" x="2.50128713085197" y="100">sta</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('printer')">
+		<title >printer</title>
+		<rect fill="rgb(231,121,17)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436624" x="2985.48068945634" y="30" />
+		<text fill="rgb(0,0,0)" font-size="12" x="2986.48068945634" y="40">pr</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('printer')">
+		<title >printer</title>
+		<rect fill="rgb(218,189,17)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436624" x="2985.48068945634" y="105" />
+		<text fill="rgb(0,0,0)" font-size="12" x="2986.48068945634" y="115">pr</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: APP_STARTED')">
+		<title >sendEvent: APP_STARTED</title>
+		<rect fill="rgb(252,109,46)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="15.5193105436622" y="15" />
+		<text fill="rgb(0,0,0)" font-size="12" x="16.5193105436622" y="25">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: PARAM_OPEN')">
+		<title >sendEvent: PARAM_OPEN</title>
+		<rect fill="rgb(240,75,1)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="27.534758978592" y="15" />
+		<text fill="rgb(0,0,0)" font-size="12" x="28.534758978592" y="25">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: PARAM_CLOSE')">
+		<title >sendEvent: PARAM_CLOSE</title>
+		<rect fill="rgb(211,204,51)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="80.1023458814098" y="15" />
+		<text fill="rgb(0,0,0)" font-size="12" x="81.1023458814098" y="25">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: CALC_OPEN')">
+		<title >sendEvent: CALC_OPEN</title>
+		<rect fill="rgb(248,104,23)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="126.662208566763" y="15" />
+		<text fill="rgb(0,0,0)" font-size="12" x="127.662208566763" y="25">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: CALC_CLOSE')">
+		<title >sendEvent: CALC_CLOSE</title>
+		<rect fill="rgb(207,161,5)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436624" x="1345.07489302167" y="15" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1346.07489302167" y="25">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: PRINT_OPEN')">
+		<title >sendEvent: PRINT_OPEN</title>
+		<rect fill="rgb(226,169,34)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436624" x="1401.22400787845" y="15" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1402.22400787845" y="25">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: PARAM_OPEN')">
+		<title >sendEvent: PARAM_OPEN</title>
+		<rect fill="rgb(249,184,53)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="1769.02381651623" y="15" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1770.02381651623" y="25">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: PARAM_CLOSE')">
+		<title >sendEvent: PARAM_CLOSE</title>
+		<rect fill="rgb(224,208,53)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="1816.33464472876" y="15" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1817.33464472876" y="25">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: CALC_OPEN')">
+		<title >sendEvent: CALC_OPEN</title>
+		<rect fill="rgb(241,119,29)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="1829.85202421806" y="15" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1830.85202421806" y="25">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: CALC_CLOSE')">
+		<title >sendEvent: CALC_CLOSE</title>
+		<rect fill="rgb(207,95,11)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436624" x="2881.66589523707" y="15" />
+		<text fill="rgb(0,0,0)" font-size="12" x="2882.66589523707" y="25">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: PRINT_OPEN')">
+		<title >sendEvent: PRINT_OPEN</title>
+		<rect fill="rgb(243,221,0)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436624" x="2920.48503616927" y="15" />
+		<text fill="rgb(0,0,0)" font-size="12" x="2921.48503616927" y="25">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('initialResult:  215l, 1:45, 314km')">
+		<title >initialResult:  215l, 1:45, 314km</title>
+		<rect fill="rgb(241,98,1)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="265.932178737005" y="45" />
+		<text fill="rgb(0,0,0)" font-size="12" x="266.932178737005" y="55">in</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('initialResult:  215l, 1:45, 314km')">
+		<title >initialResult:  215l, 1:45, 314km</title>
+		<rect fill="rgb(251,66,6)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="783.583745170034" y="45" />
+		<text fill="rgb(0,0,0)" font-size="12" x="784.583745170034" y="55">in</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('initialResult:  188l, 1:48, 314km')">
+		<title >initialResult:  188l, 1:48, 314km</title>
+		<rect fill="rgb(254,116,26)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436624" x="1911.22937926693" y="45" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1912.22937926693" y="55">in</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('initialResult:  188l, 1:45, 314km')">
+		<title >initialResult:  188l, 1:45, 314km</title>
+		<rect fill="rgb(241,198,13)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436624" x="2493.4744837666" y="45" />
+		<text fill="rgb(0,0,0)" font-size="12" x="2494.4744837666" y="55">in</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('finalResult: 197l, 1:42, 302km')">
+		<title >finalResult: 197l, 1:42, 302km</title>
+		<rect fill="rgb(244,61,23)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="635.134139998003" y="45" />
+		<text fill="rgb(0,0,0)" font-size="12" x="636.134139998003" y="55">fi</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('finalResult: 186l, 1:37, 296km')">
+		<title >finalResult: 186l, 1:37, 296km</title>
+		<rect fill="rgb(246,145,40)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="1232.77666330811" y="45" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1233.77666330811" y="55">fi</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('finalResult: 187l, 1:43, 302km')">
+		<title >finalResult: 187l, 1:43, 302km</title>
+		<rect fill="rgb(247,203,9)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436624" x="2345.97014997768" y="45" />
+		<text fill="rgb(0,0,0)" font-size="12" x="2346.97014997768" y="55">fi</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('finalResult: 186l, 1:38, 296km')">
+		<title >finalResult: 186l, 1:38, 296km</title>
+		<rect fill="rgb(249,82,35)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436624" x="2804.02761265651" y="45" />
+		<text fill="rgb(0,0,0)" font-size="12" x="2805.02761265651" y="55">fi</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: APP_STARTED')">
+		<title >sendEvent: APP_STARTED</title>
+		<rect fill="rgb(229,144,16)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="15.5193105436622" y="90" />
+		<text fill="rgb(0,0,0)" font-size="12" x="16.5193105436622" y="100">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: PARAM_OPEN')">
+		<title >sendEvent: PARAM_OPEN</title>
+		<rect fill="rgb(223,107,51)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="27.534758978592" y="90" />
+		<text fill="rgb(0,0,0)" font-size="12" x="28.534758978592" y="100">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: PARAM_CLOSE')">
+		<title >sendEvent: PARAM_CLOSE</title>
+		<rect fill="rgb(231,173,36)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="80.1023458814098" y="90" />
+		<text fill="rgb(0,0,0)" font-size="12" x="81.1023458814098" y="100">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: CALC_OPEN')">
+		<title >sendEvent: CALC_OPEN</title>
+		<rect fill="rgb(244,135,5)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="126.662208566763" y="90" />
+		<text fill="rgb(0,0,0)" font-size="12" x="127.662208566763" y="100">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: CALC_CLOSE')">
+		<title >sendEvent: CALC_CLOSE</title>
+		<rect fill="rgb(244,77,25)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436624" x="1345.07489302167" y="90" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1346.07489302167" y="100">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: PRINT_OPEN')">
+		<title >sendEvent: PRINT_OPEN</title>
+		<rect fill="rgb(239,16,36)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436624" x="1401.22400787845" y="90" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1402.22400787845" y="100">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: PARAM_OPEN')">
+		<title >sendEvent: PARAM_OPEN</title>
+		<rect fill="rgb(225,180,48)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="1769.02381651623" y="90" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1770.02381651623" y="100">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: PARAM_CLOSE')">
+		<title >sendEvent: PARAM_CLOSE</title>
+		<rect fill="rgb(215,168,1)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="1816.33464472876" y="90" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1817.33464472876" y="100">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: CALC_OPEN')">
+		<title >sendEvent: CALC_OPEN</title>
+		<rect fill="rgb(212,100,53)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="1829.85202421806" y="90" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1830.85202421806" y="100">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: CALC_CLOSE')">
+		<title >sendEvent: CALC_CLOSE</title>
+		<rect fill="rgb(231,198,41)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436624" x="2881.66589523707" y="90" />
+		<text fill="rgb(0,0,0)" font-size="12" x="2882.66589523707" y="100">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('sendEvent: PRINT_OPEN')">
+		<title >sendEvent: PRINT_OPEN</title>
+		<rect fill="rgb(218,75,4)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436624" x="2920.48503616927" y="90" />
+		<text fill="rgb(0,0,0)" font-size="12" x="2921.48503616927" y="100">se</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('initialResult:  215l, 1:45, 314km')">
+		<title >initialResult:  215l, 1:45, 314km</title>
+		<rect fill="rgb(212,119,36)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="265.932178737005" y="120" />
+		<text fill="rgb(0,0,0)" font-size="12" x="266.932178737005" y="130">in</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('initialResult:  215l, 1:45, 314km')">
+		<title >initialResult:  215l, 1:45, 314km</title>
+		<rect fill="rgb(254,168,51)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="783.583745170034" y="120" />
+		<text fill="rgb(0,0,0)" font-size="12" x="784.583745170034" y="130">in</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('initialResult:  188l, 1:48, 314km')">
+		<title >initialResult:  188l, 1:48, 314km</title>
+		<rect fill="rgb(236,34,28)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436624" x="1911.22937926693" y="120" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1912.22937926693" y="130">in</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('initialResult:  188l, 1:45, 314km')">
+		<title >initialResult:  188l, 1:45, 314km</title>
+		<rect fill="rgb(245,211,36)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436624" x="2493.4744837666" y="120" />
+		<text fill="rgb(0,0,0)" font-size="12" x="2494.4744837666" y="130">in</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('finalResult: 197l, 1:42, 302km')">
+		<title >finalResult: 197l, 1:42, 302km</title>
+		<rect fill="rgb(237,1,35)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="635.134139998003" y="120" />
+		<text fill="rgb(0,0,0)" font-size="12" x="636.134139998003" y="130">fi</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('finalResult: 186l, 1:37, 296km')">
+		<title >finalResult: 186l, 1:37, 296km</title>
+		<rect fill="rgb(222,100,45)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436622" x="1232.77666330811" y="120" />
+		<text fill="rgb(0,0,0)" font-size="12" x="1233.77666330811" y="130">fi</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('finalResult: 187l, 1:43, 302km')">
+		<title >finalResult: 187l, 1:43, 302km</title>
+		<rect fill="rgb(233,129,24)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436624" x="2345.97014997768" y="120" />
+		<text fill="rgb(0,0,0)" font-size="12" x="2346.97014997768" y="130">fi</text>
+	</g>
+	<g class="func_g" onmouseout="c()" onmouseover="s('finalResult: 186l, 1:38, 296km')">
+		<title >finalResult: 186l, 1:38, 296km</title>
+		<rect fill="rgb(207,114,53)" height="14" opacity="0.8" rx="3" ry="3" width="14.0193105436624" x="2804.02761265651" y="120" />
+		<text fill="rgb(0,0,0)" font-size="12" x="2805.02761265651" y="130">fi</text>
+	</g>
+	<!-- 
+	Generated using the Perl SVG Module V2.64
+	by Ronan Oger
+	Info: http://www.roitsystems.com/
+ -->
+</svg>

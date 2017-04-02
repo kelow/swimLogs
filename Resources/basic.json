@@ -1,0 +1,58 @@
+{
+
+	"name" : "basic",      
+	"startMatcher" : "^Program started(.*)",
+	"details" : "$1",
+	"endMatcher"   : "^Quit$",
+	"children"     : [
+		{
+			"name" : "startup",
+			"startMatcher"  : "^Startup sequence$",
+			"endMatcher"    : "^Startup sequence finished"
+		} ,
+		{
+			"name" : "sendEvent",
+			"matcher"       : "^SendEvent\\((.*)\\)",
+			"details"       : "$1"
+		},
+		{
+			"name" : "rideOpened",
+			"startMatcher"  : "^RideKey = (.*)",
+			"details"       : "$1",
+			"endMatcher"    : "",
+			"children"      : [
+				{
+					"name" : "optimization",
+					"startMatcher"  : "^Calculation started",
+					"endMatcher"    : "^Calculation ended",
+					"color"         : "rgb(0,180,0)",
+					"children"      : [
+						{	
+							"name"    : "initialResult",
+							"matcher" : "^Initial result:(.*)",
+							"details" : "$1"				
+						} ,
+						{
+							"name"    : "optimizeRoute",
+							"startMatcher" : "^Optimizing route...$",
+							"endMatcher"   : "^Optimizing route...100%"
+						},
+						{
+							"name"    : "finalResult",
+							"matcher" : "Final result: (.*)",
+							"details" : "$1"
+						}
+					
+						
+					]
+				},
+				{
+					"name" : "printer",
+					"startMatcher"  : "^Start printer$",
+					"endMatcher"    : "^PRINTER: DONE$"
+				}
+			]
+			
+		}
+	]
+}
