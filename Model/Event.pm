@@ -11,6 +11,7 @@ has endTime => (is => 'rw');
 
 has details => (is => 'rw');
 has name => (is => 'rw');
+has id => (is => 'rw');
 
 has children => (is => 'rw');
 has color => (is => 'rw');

@@ -11,6 +11,7 @@ has color => (is=>'rw');
 
 has text => (is=>'rw');
 has details => (is=>'rw');
+has id => (is=>'rw');
 
 sub isInside{
 	my ($self, $xMin, $xMax) = @_;

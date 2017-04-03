@@ -11,6 +11,7 @@ use Processor::DateFormats;
 use Processor::DateInterpolator;
 use View::StripSet;
 use View::Canvas;
+use View::LogFrame;
 
 
 my @GVfiles = @ARGV;
@@ -97,10 +98,19 @@ sub loadFile{
 	my $interpolator = Processor::DateInterpolator->new(input=> $input);
 	$interpolator -> loadDates();
 	$interpolator -> fillDatesInEvents($events);
-	print "Dumping events for file $file :";
-	print Dumper $events;
+	#print "Dumping events for file $file :";
+	#print Dumper $events;
 	
 	return $events;
 }
 
+sub init_dialog{
+	my $f1 = View::LogFrame->create();
+	my $ff1 = $f1->frame();
+	my $hbox = IUP::Hbox -> new(child=>$ff1);
+	return IUP::Dialog->new( TITLE=>"Swim Logs", child=>$hbox, SIZE=>"400x" );
+}
 
+my $dlg = init_dialog();
+$dlg->Show();
+IUP->MainLoop();

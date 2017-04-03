@@ -52,6 +52,7 @@ sub genStrips{
 		$maxLevel = $strip->minY if ($strip->minY > $maxLevel); 
 		
 		$strip -> text($event->name);
+		$strip -> id($event->details);
 		$strip -> details($event->details);
 		$strip -> color($event->color);
 		
