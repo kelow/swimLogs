@@ -2,6 +2,7 @@ package Processor::DateFormats;
 use Time::Piece;
 use 5.010;
 use Data::Dumper;
+use Try::Tiny;
 
 my %formats = (
 	'\d{2}[.\/ -]\d{2}[.\/ -]\d{4}[.\/ -]\d{2}[.\/: ]\d{2}[.\/: ]\d{2}' => "%d %m %Y %H %M %S",
@@ -36,8 +37,13 @@ sub getDate{
 	$foundDate =~ s/[ ]{2,}/ /g;
 	
 	#print "FoundDate: $foundDate, foundFormat: $foundFormat\n";
+	my $time;
+	try {
+		$time = Time::Piece->strptime($foundDate, $foundFormat);
+	} catch {
+   	    warn "$foundDate matches $foundFormat but it wasn't possible to parse, caught error: $_"; # 
+  	};
 	
-	my $time = Time::Piece->strptime($foundDate, $foundFormat);
 	
 	return $time;
 }

@@ -5,16 +5,26 @@ use Try::Tiny;
 
 has lines => (is => "rw");
 
+
 has lineIndex => (is => 'rw', isa => 'Int', default => 0);
 has file => (is => 'rw');
 
 sub fromFile{
 	my($self, $fileName) = @_;
-	open (my $fh, '<', $fileName) or die "Can't open file $fileName: $!\n";
-	my @lines = <$fh>;
-	close $fh;
+	open (IN, '<', $fileName) or die "Can't open file $fileName: $!\n";
+	local $/ = undef;
+	my $content = <IN>;
+	#print "Content $content";
+	my @lines = split /\r\n|\n|\r/, $content;
+	#close $fh;
+	local $, = "\n";
+	#print @lines;
+	
 	$self->lines(\@lines);
 	$self ->file($fileName);
+	foreach my $line (@{$self->lines}){
+		$line .= "\n";
+	}
 }
 
 sub getLine{

@@ -16,7 +16,7 @@ use View::LogFrame;
 
 my @GVfiles = @ARGV;
 push @GVfiles, $FindBin::Bin . '\\Examples\\basic.log' unless @GVfiles;
-push @GVfiles, $FindBin::Bin . '\\Examples\\basic.log';
+#push @GVfiles, $FindBin::Bin . '\\Examples\\basic.log';
 print "Generate for files: ";
 print @GVfiles;
 print "\n";
@@ -30,17 +30,18 @@ my $events = addAllFiles();
 $stripSet -> events($events);
 my $i = 0;
 foreach my $e (@$events){
-	print "GenStrips from below table at $i\n";
-	print Dumper $e;
+	#print "GenStrips from below table at $i\n";
+	#print Dumper $e;
 	$stripSet -> genStrips($i++);
 }
 
-print Dumper $stripSet->strips();
+#print Dumper $stripSet->strips();
 
 my $cnv = View::Canvas->new();
 $cnv->xOffset($stripSet->minTime());
 $cnv->xSize($stripSet->maxTime() -$stripSet->minTime());
-$cnv->fitScaleX();
+$cnv->w($stripSet->maxTime() -$stripSet->minTime());
+$cnv->fitScaleX();  #shall produce 1.0 scale
 
 $cnv->create(1);
 $cnv->strips($stripSet->strips());
