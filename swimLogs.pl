@@ -1,4 +1,6 @@
 use IUP ':all';
+use strict;
+use warnings;
 use Data::Dumper;
 use JSON;
 
@@ -16,7 +18,7 @@ use View::LogFrame;
 
 my @GVfiles = @ARGV;
 push @GVfiles, $FindBin::Bin . '\\Examples\\basic.log' unless @GVfiles;
-push @GVfiles, $FindBin::Bin . '\\Examples\\basic.log';
+#push @GVfiles, $FindBin::Bin . '\\Examples\\basic.log';
 print "Generate for files: ";
 print @GVfiles;
 print "\n";
@@ -31,11 +33,11 @@ $stripSet -> events($events);
 my $i = 0;
 foreach my $e (@$events){
 	print "GenStrips from below table at $i\n";
-	print Dumper $e;
+	#print Dumper $e;
 	$stripSet -> genStrips($i++);
 }
 
-print Dumper $stripSet->strips();
+#print Dumper $stripSet->strips();
 
 my $cnv = View::Canvas->new();
 $cnv->xOffset($stripSet->minTime());
@@ -101,13 +103,28 @@ sub loadFile{
 	#print "Dumping events for file $file :";
 	#print Dumper $events;
 	
-	return $events;
+	return $basicProcessor -> getEvents();
 }
 
 sub init_dialog{
-	my $f1 = View::LogFrame->create();
-	my $ff1 = $f1->frame();
-	my $hbox = IUP::Hbox -> new(child=>$ff1);
+	my $events = Util::Flatten::flatten($stripSet -> events() -> [0]);
+	my (%ids, %types, %typeId);
+	
+
+	foreach my $e (@$events){
+		
+		my $d = $e->id();
+		$ids{$d} = 1 if $d;
+		$types{$e->name()} = 1;
+		$typeId{$e->name()} -> {_all_} = 1;
+		$typeId{$e->name()} -> {$d} = 1 if $d;
+	}
+	
+	my $lf1 = View::LogFrame->create(file => $GVfiles[0], ids => [keys %ids], types=> [keys %types]);
+	
+	my $f1 = $lf1->frame();
+	
+	my $hbox = IUP::Hbox -> new(child=>$f1);
 	return IUP::Dialog->new( TITLE=>"Swim Logs", child=>$hbox, SIZE=>"400x" );
 }
 

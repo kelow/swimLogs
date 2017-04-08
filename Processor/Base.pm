@@ -25,6 +25,7 @@ has endMatcher => (is => 'rw');
 has singleMatcher => (is => 'rw');
 
 has details => (is => 'rw');
+has id => (is => 'rw');
 has color => (is => 'rw');
 
 has processorType => (is => 'rw');
@@ -56,9 +57,11 @@ sub fromHashRef{
 	$self -> endMatcher ($ref -> {endMatcher});
 	$self -> singleMatcher ($ref -> {matcher});
 	$self -> details ($ref -> {details});
+	$self -> id($ref -> {id});
 	$self -> singleMatcher ($ref -> {matcher});
 	$self -> color ($ref -> {color});
 	$self -> level($level);
+	
 	if ($ref -> {children}){
 		$self->children(List::Object->new(type=>"Processor::Base"));
 		foreach my $ch (@{$ref->{children}}){
@@ -104,9 +107,11 @@ sub findForChildren{
 sub findSingleEvents{
 	my ($self) = @_;
 	my $matcher = $self->singleMatcher;
+	print "Match single against: $matcher\n";
 	while (my $line = $self->input->getLineAndAccept){
 		if ($line =~ /$matcher/){
 			$self->events->add($self -> generateEvent());
+			print "At line " . $self->input->lineIndex . " found $matcher, adding new event for " . $self -> processorType . "\n";
 		}
 	} 
 }
@@ -117,6 +122,7 @@ sub findLastingEvents{
 	my $startMatcher = $self->startMatcher;
 	my $endMatcher = $self->endMatcher;
 	
+	print "Match lasting against: $startMatcher "; print defined $endMatcher ? "-$endMatcher\n" : "\n";
 	while (my $line = $self->input->getLineAndAccept){
 		if ($line =~ /$startMatcher/){
 			print "At line " . $self->input->lineIndex . " found $startMatcher, adding new event for " . $self -> processorType . "\n";
@@ -137,6 +143,11 @@ sub generateEvent{
 	if ($self-> details){
 		$event->details(eval $self->details);
 	}
+	if ($self-> id){
+		$event->id(eval $self->id);
+		print "ID found: " . $event->id . "\n" if $event->id;
+	}
+	
 	if ($self-> color){
 		$event->color($self-> color);
 	}
