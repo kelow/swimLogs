@@ -1,6 +1,4 @@
 use IUP ':all';
-use strict;
-use warnings;
 use Data::Dumper;
 use JSON;
 
@@ -32,7 +30,7 @@ my $events = addAllFiles();
 $stripSet -> events($events);
 my $i = 0;
 foreach my $e (@$events){
-	print "GenStrips from below table at $i\n";
+	#print "GenStrips from below table at $i\n";
 	#print Dumper $e;
 	$stripSet -> genStrips($i++);
 }
@@ -42,7 +40,8 @@ foreach my $e (@$events){
 my $cnv = View::Canvas->new();
 $cnv->xOffset($stripSet->minTime());
 $cnv->xSize($stripSet->maxTime() -$stripSet->minTime());
-$cnv->fitScaleX();
+$cnv->w($stripSet->maxTime() -$stripSet->minTime());
+$cnv->fitScaleX();  #shall produce 1.0 scale
 
 $cnv->create(1);
 $cnv->strips($stripSet->strips());

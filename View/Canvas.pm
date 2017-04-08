@@ -71,6 +71,13 @@ sub fitScaleX{
 	$self->xScale($self->w / $self -> xSize);
 }
 
+#adjust X size to achieve time resolution (pixels per second) passed as argument
+sub fitForTimeResolution{
+	my ($self, $pixPerSecond) = @_;
+	my $time = $self -> xSize();
+	
+}
+
 sub color {
 	my ($color) = @_;
 	unless (defined $color){

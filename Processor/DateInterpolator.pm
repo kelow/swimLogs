@@ -24,15 +24,36 @@ sub loadDates{
 	$input -> lineIndex(0);
 	$self -> {linesMap} = {};
 	
+	my $firstDate;
+	my $previousDate;
+	
 	while (my $line = $input -> getLineAndAccept){
 		if (my $date = Processor::DateFormats::getDate($line) ){
-			$self -> data -> add({'line' => $input -> lineIndex, 'date' => $date});
-			$self -> {linesMap} -> {$input -> lineIndex} = $self -> data -> count - 1;
+			$firstDate = $date unless defined $firstDate;
+			
+			#skip dates that are earlier than the first date (compile times etc)
+			#skip dates that are at max unix timestamp
+			if ($date->epoch >= $firstDate->epoch and $date->epoch < 2145830000 ){
+				#skip dates that are equal to previous date (we don't need them)
+				if (not defined $previousDate or ($date > $previousDate and $date < $previousDate + 3600)){
+					$self -> data -> add({'line' => $input -> lineIndex, 'date' => $date});
+					$self -> {linesMap} -> {$input -> lineIndex} = $self -> data -> count - 1;
+					$previousDate = $date;
+				} else {
+					#print "Not using date: $date\n";
+				}
+			}
+			
 			#print "Matches date : $line " . $date . "\n";
 		} else {
 			#print "doesnt match date : $line";
 		}
 	}
+	open (my $fh, '>', 'times.csv') or die $!;
+	foreach my $d ($self -> data -> array()){
+		print $fh $d->{date}->epoch . ';';
+	}
+	close $fh;
 	
 }
 
@@ -83,6 +104,10 @@ sub findClosestDateForLine {
 		#if later date was not found tie current date to the last date stored in previousDateLine
 		unless (defined $nextDateLine){
 			return $self->getDateForLine($previousDateLine);
+		}
+		
+		unless (defined $previousDateLine){
+			return $self->getDateForLine($nextDateLine);
 		}
 		
 		#interpolate dates;

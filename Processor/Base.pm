@@ -78,8 +78,10 @@ sub processInput{
 	$self-> events(List::Object->new(type=>'Model::Event'));	
 	
 	if ($self -> singleMatcher){
+		print "Looking for singleEvents with " . $self -> singleMatcher . "\n";
 		$self -> findSingleEvents();
 	} elsif ($self -> startMatcher){
+		print "Looking for lastingEvent with " . $self -> startMatcher . "\n";
 		$self -> findLastingEvents();
 	} else {
 		die "Processor " . $self -> processorType() . " has no single nor lasting matcher\n";
@@ -93,12 +95,16 @@ sub processInput{
 sub findForChildren{
 	my ($self) = @_;
 	foreach my $child ($self -> children -> array){
+		#print Dumper $child;
+		#print Dumper $self -> events;
+		 
 		my $firstEvent = $self -> events -> get(0);
-		if ($firstEvent and $firstEvent -> startLine){
-			$self -> input -> lineIndex($firstEvent-> startLine);
+		if ($firstEvent and $firstEvent -> startLine){		
+			$self -> input -> lineIndex($firstEvent-> startLine - 1);
 		} else {
 			$self -> input -> lineIndex(0);
 		}
+		#print "Rewind input to " . $self -> input -> lineIndex . " for child " . $child -> processorType . "\n";
 		$child -> input($self -> input);
 		$child -> processInput();
 	}
@@ -110,6 +116,7 @@ sub findSingleEvents{
 	print "Match single against: $matcher\n";
 	while (my $line = $self->input->getLineAndAccept){
 		if ($line =~ /$matcher/){
+			#print "Found single event " . $self -> processorType . " at line " . $self->input->lineIndex . ":$line"; 
 			$self->events->add($self -> generateEvent());
 			print "At line " . $self->input->lineIndex . " found $matcher, adding new event for " . $self -> processorType . "\n";
 		}
@@ -124,13 +131,14 @@ sub findLastingEvents{
 	
 	print "Match lasting against: $startMatcher "; print defined $endMatcher ? "-$endMatcher\n" : "\n";
 	while (my $line = $self->input->getLineAndAccept){
+	#	print "Check line " . $self->input->lineIndex . ": ". $line;
 		if ($line =~ /$startMatcher/){
-			print "At line " . $self->input->lineIndex . " found $startMatcher, adding new event for " . $self -> processorType . "\n";
+			#print "At line " . $self->input->lineIndex . " found $startMatcher, adding new event for " . $self -> processorType . "\n";
 			$self->closeLastEvent();
 			$self->events->add($self -> generateEvent());
 			
 		} elsif ($endMatcher && $line =~ /$endMatcher/){
-			print "At line " . $self->input->lineIndex . " found $endMatcher, closing last event for " . $self -> processorType . "\n";
+			#print "At line " . $self->input->lineIndex . " found $endMatcher, closing last event for " . $self -> processorType . "\n";
 			$self->closeLastEvent();
 		}
 	} 
@@ -160,7 +168,7 @@ sub closeLastEvent{
 	return unless $self->events() -> array();
 	my $lastEvent = $self->events()->last();
 	if ($lastEvent and not $lastEvent->endLine()){
-		print "At line " . $self->input->lineIndex . ", closing last event for " . $self -> processorType . "\n";
+		#print "At line " . $self->input->lineIndex . ", closing last event for " . $self -> processorType . "\nLine: " . $self->input->getLine();
 		$lastEvent->endLine($self->input->lineIndex);
 	}
 }

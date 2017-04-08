@@ -53,7 +53,14 @@ sub genStrips{
 		
 		$strip -> text($event->name);
 		$strip -> id($event->id);
-		$strip -> details($event->details);
+		
+		my $details = defined $event->details ? $event->details : ' ';
+
+		$strip -> details( $details . ' from ' . $event->startTime . ' at line ' . $event->startLine);
+		if ($event->endLine){
+			$strip -> details($strip -> details . ' to ' . $event->endTime . ' at line ' . $event->endLine );
+		}
+			
 		$strip -> color($event->color);
 		
 		
